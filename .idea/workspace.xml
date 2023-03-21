@@ -7,16 +7,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb2a54f6-cd03-4438-9d27-c1a1d9c9e7d8" name="Changes" comment="first servlet development to display hello world.">
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/servlet/Banco.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/servlet/Empresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/servlet/ListaEmpresasServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/servlet/NovaEmpresaServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/servlet/OiMundoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/NovaEmpresaCriada.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/formNovaEmpresa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/listaEmpresas.jsp" afterDir="false" />
+    <list default="true" id="fb2a54f6-cd03-4438-9d27-c1a1d9c9e7d8" name="Changes" comment="add encodings.xml">
+      <change afterPath="$PROJECT_DIR$/src/main/servlet/AtualizaEmpresaServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/servlet/MostraEmpresaServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/servlet/RemoveEmpresaServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/formAtualizaEmpresa.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/servlet/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/Banco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/servlet/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/servlet/ListaEmpresasServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/ListaEmpresasServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/servlet/NovaEmpresaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/NovaEmpresaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/NovaEmpresaCriada.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/NovaEmpresaCriada.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/bemVindo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bemVindo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formNovaEmpresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formNovaEmpresa.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/listaEmpresas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listaEmpresas.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,20 +66,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/vitor/treinamento-java/treinamento-java-web/gerenciador/src/main/webapp&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/vitor/Downloads/jstl-1.2.jar",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.22324508",
+    "settings.editor.selected.configurable": "preferences.externalResources"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JAVA&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="main.servlet" />
@@ -123,7 +134,70 @@
       <option name="project" value="LOCAL" />
       <updated>1679338205342</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first servlet development to display hello world.">
+      <created>1679338255100</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679338255100</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Development of Empresa Model and a class to work as database">
+      <created>1679338312109</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679338312109</updated>
+    </task>
+    <task id="LOCAL-00005" summary="servlet to method get &quot;empresas&quot; list">
+      <created>1679338354543</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679338354543</updated>
+    </task>
+    <task id="LOCAL-00006" summary="create jsp to display list&lt;Empresas&gt;">
+      <created>1679338379905</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679338379905</updated>
+    </task>
+    <task id="LOCAL-00007" summary="create formNovaEmpresa.html, NovaEmpresaCriada.jsp and NovaEmpresaServlet.java to add a new Empresa with post request from client.">
+      <created>1679338475668</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679338475668</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add workspace.xml">
+      <created>1679338510276</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679338510276</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add readme.md">
+      <created>1679338524586</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679338524586</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add web.xml settings into WEB-INF -&gt; maven project">
+      <created>1679338598391</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679338598391</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add encodings.xml">
+      <created>1679338611386</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679338611386</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +215,18 @@
     <MESSAGE value="creating initial hello world!" />
     <MESSAGE value="pom.xml and other settings files" />
     <MESSAGE value="first servlet development to display hello world." />
-    <option name="LAST_COMMIT_MESSAGE" value="first servlet development to display hello world." />
+    <MESSAGE value="Development of Empresa Model and a class to work as database" />
+    <MESSAGE value="servlet to method get &quot;empresas&quot; list" />
+    <MESSAGE value="create jsp to display list&lt;Empresas&gt;" />
+    <MESSAGE value="create formNovaEmpresa.html, NovaEmpresaCriada.jsp and NovaEmpresaServlet.java to add a new Empresa with post request from client." />
+    <MESSAGE value="add workspace.xml" />
+    <MESSAGE value="add readme.md" />
+    <MESSAGE value="add web.xml settings into WEB-INF -&gt; maven project" />
+    <MESSAGE value="add encodings.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add encodings.xml" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
