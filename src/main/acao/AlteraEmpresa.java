@@ -1,8 +1,8 @@
-package main.servlet;
+package main.acao;
 
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
+import main.modelo.Banco;
+import main.modelo.Empresa;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -10,18 +10,16 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-@WebServlet(urlPatterns = "/atualizaempresa")
-public class AtualizaEmpresaServlet extends HttpServlet {
+public class AlteraEmpresa {
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void executa(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
         String paramNomeEmpresa = req.getParameter("nome");
         String paramDataEmpresa = req.getParameter("data");
         String paramId = req.getParameter("id");
         Long id = Long.parseLong(paramId);
 
-        System.out.println("Atualizando empresa: " + paramDataEmpresa + " - id: " + paramId);
+        System.out.println("ACAO :: Atualizando empresa: " + paramDataEmpresa + " - id: " + paramId);
 
         SimpleDateFormat dateFormatter = new SimpleDateFormat("dd/MM/yyyy");
         Date dataAbertura;
@@ -42,7 +40,8 @@ public class AtualizaEmpresaServlet extends HttpServlet {
             throw new RuntimeException(e);
         }
 
-        resp.sendRedirect("listaempresas");
+        resp.sendRedirect("entrada?acao=listaempresas");
 
     }
+
 }

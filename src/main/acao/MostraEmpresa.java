@@ -1,20 +1,21 @@
-package main.servlet;
+package main.acao;
+
+import main.modelo.Banco;
+import main.modelo.Empresa;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = "/mostraempresa")
-public class MostraEmpresaServlet extends HttpServlet {
+public class MostraEmpresa {
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void executa(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String paramId = req.getParameter("id");
         Long id = Long.parseLong(paramId);
+
+        System.out.println("ACAO :: Mostrando a empresa de id: " + id);
 
         Banco banco = new Banco();
         Empresa empresa;
@@ -24,14 +25,12 @@ public class MostraEmpresaServlet extends HttpServlet {
             throw new RuntimeException(e);
         }
 
-        System.out.println(empresa.getNome());
+        System.out.println("ACAO :: Empresa selecionada: " + empresa.getNome());
 
         req.setAttribute("empresa", empresa);
 
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/formAtualizaEmpresa.jsp");
         requestDispatcher.forward(req, resp);
-
-        // resp.sendRedirect("atualizaempresa");
-
     }
+
 }
