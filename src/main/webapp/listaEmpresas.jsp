@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="java.util.List, main.servlet.Empresa"%>
+<%@ page import="java.util.List, main.modelo.Empresa"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,8 +8,8 @@
     <title>Lista Empresas</title>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-    <c:url value="/removeempresa" var="linkServletRemoveEmpresa"/>
-    <c:url value="/mostraempresa" var="linkServletMostraEmpresa"/>
+    <c:url value="/entrada?acao=removeempresa" var="linkServletRemoveEmpresa"/>
+    <c:url value="/entrada?acao=mostraempresa" var="linkServletMostraEmpresa"/>
 </head>
 <body>
   <h1>Lista de Empresas</h1>
@@ -24,8 +24,8 @@
         <c:forEach items="${empresas}" var="emp">
             <li>
                 ${emp.nome} - <fmt:formatDate value="${emp.dataAbertura}" pattern="dd/MM/yyyy"/>
-                <a href="${linkServletMostraEmpresa}?id=${emp.id}">edita</a>
-                <a href="${linkServletRemoveEmpresa}?id=${emp.id}">remove</a>
+                <a href="${linkServletMostraEmpresa}&id=${emp.id}">edita</a>
+                <a href="${linkServletRemoveEmpresa}&id=${emp.id}">remove</a>
             </li>
         </c:forEach>
     </ul>
