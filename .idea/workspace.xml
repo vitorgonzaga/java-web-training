@@ -7,23 +7,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb2a54f6-cd03-4438-9d27-c1a1d9c9e7d8" name="Changes" comment="add encodings.xml">
-      <change afterPath="$PROJECT_DIR$/src/main/servlet/AtualizaEmpresaServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/servlet/MostraEmpresaServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/servlet/RemoveEmpresaServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/formAtualizaEmpresa.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fb2a54f6-cd03-4438-9d27-c1a1d9c9e7d8" name="Changes" comment="finishing the course!">
+      <change afterPath="$PROJECT_DIR$/src/main/acao/AlteraEmpresa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/acao/ListaEmpresas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/acao/MostraEmpresa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/acao/NovaEmpresa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/acao/RemoveEmpresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/servlet/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/Banco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/servlet/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/servlet/AtualizaEmpresaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/AtualizaEmpresaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/servlet/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/modelo/Banco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/servlet/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/modelo/Empresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/servlet/ListaEmpresasServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/ListaEmpresasServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/servlet/MostraEmpresaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/MostraEmpresaServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/servlet/NovaEmpresaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/NovaEmpresaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/NovaEmpresaCriada.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/NovaEmpresaCriada.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/bemVindo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/bemVindo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formNovaEmpresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formNovaEmpresa.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/servlet/RemoveEmpresaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/RemoveEmpresaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formAtualizaEmpresa.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formAtualizaEmpresa.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/formNovaEmpresa.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formNovaEmpresa.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/listaEmpresas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listaEmpresas.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +59,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2MyFT8Aft9JtQwn5MI6Mcj5Je7x" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -66,23 +69,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/vitor/Downloads/jstl-1.2.jar",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.22324508",
-    "settings.editor.selected.configurable": "preferences.externalResources"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/vitor/Downloads/jstl-1.2.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.22324508&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JAVA"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JAVA&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="main.servlet" />
@@ -197,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679338611386</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="finishing the course!">
+      <created>1679409259307</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679409259308</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,7 +233,8 @@
     <MESSAGE value="add readme.md" />
     <MESSAGE value="add web.xml settings into WEB-INF -&gt; maven project" />
     <MESSAGE value="add encodings.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add encodings.xml" />
+    <MESSAGE value="finishing the course!" />
+    <option name="LAST_COMMIT_MESSAGE" value="finishing the course!" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
