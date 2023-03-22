@@ -1,4 +1,4 @@
-package main.servlet;
+package main.modelo;
 
 import java.util.ArrayList;
 import java.util.Iterator;

@@ -1,4 +1,4 @@
-package main.servlet;
+package main.modelo;
 
 import java.util.Date;
 import java.util.Random;
