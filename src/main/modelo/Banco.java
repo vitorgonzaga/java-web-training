@@ -1,12 +1,12 @@
 package main.modelo;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Banco {
 
     private static List<Empresa> data = new ArrayList<>();
+    private static List<Usuario> listaUsuarios = new ArrayList<>();
+
     private static Long chaveSequencial = 1L;
 
     static {
@@ -17,6 +17,18 @@ public class Banco {
 
         Banco.data.add(alura);
         Banco.data.add(caelum);
+
+        Usuario u1 = new Usuario();
+        u1.setLogin("vitor");
+        u1.setSenha("12345");
+
+        Usuario u2 = new Usuario();
+        u2.setLogin("pamela");
+        u2.setSenha("12345");
+
+        listaUsuarios.add(u1);
+        listaUsuarios.add(u2);
+
     }
 
     public void adiciona(Empresa empresa) {
@@ -58,5 +70,21 @@ public class Banco {
             throw new Exception("Empresa não encontrada");
         }
         return null;
+    }
+
+    public Usuario buscaUsuario(String login, String senha) {
+        Usuario usuario = new Usuario(login, senha);
+        Optional<Usuario> result = Banco.listaUsuarios.stream().filter(user -> user.equals(usuario)).findFirst();
+        // try {
+            if (result.isPresent()) {
+                return result.get();
+            } else {
+                throw new NoSuchElementException("usuário não encontrado");
+            }
+        // } catch (Exception e) {
+            // throw new NoSuchElementException("usuário não encontrado");
+        // }
+
+        // return new Usuario();
     }
 }
