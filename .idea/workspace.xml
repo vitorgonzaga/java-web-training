@@ -7,24 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb2a54f6-cd03-4438-9d27-c1a1d9c9e7d8" name="Changes" comment="finishing the course!">
-      <change afterPath="$PROJECT_DIR$/src/main/acao/AlteraEmpresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/acao/ListaEmpresas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/acao/MostraEmpresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/acao/NovaEmpresa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/acao/RemoveEmpresa.java" afterDir="false" />
+    <list default="true" id="fb2a54f6-cd03-4438-9d27-c1a1d9c9e7d8" name="Changes" comment="add formLogin.jsp and logout-component.jsp and import the last in others jsp files.">
+      <change afterPath="$PROJECT_DIR$/src/main/acao/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/acao/LoginForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/acao/Logout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/servlet/AtualizaEmpresaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/AtualizaEmpresaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/servlet/Banco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/modelo/Banco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/servlet/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/modelo/Empresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/servlet/ListaEmpresasServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/ListaEmpresasServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/servlet/MostraEmpresaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/MostraEmpresaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/servlet/NovaEmpresaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/NovaEmpresaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/servlet/RemoveEmpresaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/RemoveEmpresaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formAtualizaEmpresa.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formAtualizaEmpresa.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/formNovaEmpresa.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/formNovaEmpresa.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/listaEmpresas.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/listaEmpresas.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/acao/ListaEmpresas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/acao/ListaEmpresas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/servlet/UnicaEntradaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/UnicaEntradaServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -69,26 +61,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/vitor/Downloads/jstl-1.2.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.22324508&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/vitor/treinamento-java/treinamento-java-web/gerenciador/src/main/webapp/WEB-INF/view",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.22324508",
+    "settings.editor.selected.configurable": "fileTemplates"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JAVA&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="main.acao" />
       <recent name="main.servlet" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
     </key>
   </component>
   <component name="RunManager">
@@ -207,7 +206,98 @@
       <option name="project" value="LOCAL" />
       <updated>1679409259308</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="move Banco.java and Empresa.java for new modelo package">
+      <created>1679489738219</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679489738219</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add action classes:&#10; - NovaEmpresa;&#10; - RemoveEmpresa;&#10; - ListaEmpresas;&#10; - AlteraEmpresa;&#10; - MostraEmpresa.">
+      <created>1679489940361</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679489940361</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add UnicaEntradaServlet class to work as controller.">
+      <created>1679490002376</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1679490002376</updated>
+    </task>
+    <task id="LOCAL-00016" summary="refactor: updating path url and add &quot;acao&quot; parameter in forms jsp.">
+      <created>1679490080619</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679490080619</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Remove unused servlet classes: NovaEmpresaServlet.java and RemoveEmpresaServlet.java">
+      <created>1679490172221</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679490172221</updated>
+    </task>
+    <task id="LOCAL-00018" summary="refactor(pom.xml): add maven-war-plugin to run the project properly into eclipse.">
+      <created>1679490215817</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679490215817</updated>
+    </task>
+    <task id="LOCAL-00019" summary="workspace.xml">
+      <created>1679490227207</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1679490227207</updated>
+    </task>
+    <task id="LOCAL-00020" summary="moving jsps files into WEB-INF folder">
+      <created>1679571972758</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1679571972758</updated>
+    </task>
+    <task id="LOCAL-00021" summary="create Acao Interface, implement it in all action classes">
+      <created>1679572057245</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1679572057245</updated>
+    </task>
+    <task id="LOCAL-00022" summary="refactor(UnicaEntradaServlet): implements the &quot;command&quot; design pattern and Reflections (Class) to improve the code.">
+      <created>1679572150422</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1679572150422</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add the Usuario class model and initialize some users in static scope of Banco">
+      <created>1679613610365</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1679613610365</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add formLogin.jsp and logout-component.jsp and import the last in others jsp files.">
+      <created>1679613750324</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1679613750324</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add formLogin.jsp and logout-component.jsp and import the last in others jsp files.">
+      <created>1679613758725</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1679613758725</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,7 +324,19 @@
     <MESSAGE value="add web.xml settings into WEB-INF -&gt; maven project" />
     <MESSAGE value="add encodings.xml" />
     <MESSAGE value="finishing the course!" />
-    <option name="LAST_COMMIT_MESSAGE" value="finishing the course!" />
+    <MESSAGE value="move Banco.java and Empresa.java for new modelo package" />
+    <MESSAGE value="Add action classes:&#10; - NovaEmpresa;&#10; - RemoveEmpresa;&#10; - ListaEmpresas;&#10; - AlteraEmpresa;&#10; - MostraEmpresa." />
+    <MESSAGE value="Add UnicaEntradaServlet class to work as controller." />
+    <MESSAGE value="refactor: updating path url and add &quot;acao&quot; parameter in forms jsp." />
+    <MESSAGE value="Remove unused servlet classes: NovaEmpresaServlet.java and RemoveEmpresaServlet.java" />
+    <MESSAGE value="refactor(pom.xml): add maven-war-plugin to run the project properly into eclipse." />
+    <MESSAGE value="workspace.xml" />
+    <MESSAGE value="moving jsps files into WEB-INF folder" />
+    <MESSAGE value="create Acao Interface, implement it in all action classes" />
+    <MESSAGE value="refactor(UnicaEntradaServlet): implements the &quot;command&quot; design pattern and Reflections (Class) to improve the code." />
+    <MESSAGE value="add the Usuario class model and initialize some users in static scope of Banco" />
+    <MESSAGE value="add formLogin.jsp and logout-component.jsp and import the last in others jsp files." />
+    <option name="LAST_COMMIT_MESSAGE" value="add formLogin.jsp and logout-component.jsp and import the last in others jsp files." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
