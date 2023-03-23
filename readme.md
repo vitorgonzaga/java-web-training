@@ -30,5 +30,12 @@
 - How to generate WAR file;
 - How to deploy this app using another instance of Tomcat.
 
+## Part 2 (branch "part-2")
+- Refactor the project to implement the MVC design (Model-View-Controller);
+- JSPs are part of View layer, the "UnicaEntradaServlet.java" joined with Actions classes are Controller layer and we have the Empresa class as a Model, with business rules;
+- The JSPs files should be in WEB-INF folder and they are called by Controller layer;
+- Development of a basic login interface with e-mail and passoword and a User class;
+- How to set and get attributes in HttpSession Object that is automatically created by Tomcat;
+
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitorgonzaga/)
