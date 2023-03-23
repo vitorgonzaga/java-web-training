@@ -8,8 +8,8 @@
     <title>Lista Empresas</title>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-    <c:url value="/entrada?acao=removeempresa" var="linkServletRemoveEmpresa"/>
-    <c:url value="/entrada?acao=mostraempresa" var="linkServletMostraEmpresa"/>
+    <c:url value="/entrada?acao=RemoveEmpresa" var="linkServletRemoveEmpresa"/>
+    <c:url value="/entrada?acao=MostraEmpresa" var="linkServletMostraEmpresa"/>
 </head>
 <body>
   <h1>Lista de Empresas</h1>
