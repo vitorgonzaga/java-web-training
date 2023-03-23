@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet("/entrada")
@@ -15,9 +16,19 @@ public class UnicaEntradaServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-	
+
 		String paramAcao = req.getParameter("acao");
 		System.out.println(paramAcao);
+
+		HttpSession session = req.getSession();
+		Boolean usuarioNaoEstaLogado = session.getAttribute("usuarioLogado") == null;
+		Boolean ehUmaAcaoProtegida = !(paramAcao.equals("Login") || paramAcao.equals("LoginForm"));
+
+		if(ehUmaAcaoProtegida && usuarioNaoEstaLogado) {
+			resp.sendRedirect("entrada?acao=LoginForm");
+			return;
+		}
+
 
 		String nomeDaClasse = "main.acao." + paramAcao;
 
