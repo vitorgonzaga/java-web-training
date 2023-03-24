@@ -38,7 +38,12 @@
 - How to set and get attributes in HttpSession Object that is automatically created by Tomcat;
 - Ho wo to use Filters (javax.servlet.Filter), mapping them with @WebFilter or web.xml file;
 - To define the execution order of filter, we should map them in web.xml;
-- ServletRequest and ServletResponse are interfaces more generic then HttpServletRequest and HttpServletResponse. So, to use methods form these lasts, we need to cast the parameters.
+- ServletRequest and ServletResponse are interfaces more generic than HttpServletRequest and HttpServletResponse. So, to use methods form these lasts, we need to cast the parameters;
+- Development of a service web that returns XML or JSON using a HttpServlet;
+- Servlet is a specification from Java/EE/Jakarta EE and when we use it, we are programming independently of server/container;
+- The difference between servlet container and application server.
+### MVC
+![designPattern](./src/main/resources/images/gerenciador_arch.png)
 
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitorgonzaga/)
