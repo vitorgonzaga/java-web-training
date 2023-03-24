@@ -36,6 +36,9 @@
 - The JSPs files should be in WEB-INF folder and they are called by Controller layer;
 - Development of a basic login interface with e-mail and passoword and a User class;
 - How to set and get attributes in HttpSession Object that is automatically created by Tomcat;
+- Ho wo to use Filters (javax.servlet.Filter), mapping them with @WebFilter or web.xml file;
+- To define the execution order of filter, we should map them in web.xml;
+- ServletRequest and ServletResponse are interfaces more generic then HttpServletRequest and HttpServletResponse. So, to use methods form these lasts, we need to cast the parameters.
 
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitorgonzaga/)

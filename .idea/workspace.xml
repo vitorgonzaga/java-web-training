@@ -7,14 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb2a54f6-cd03-4438-9d27-c1a1d9c9e7d8" name="Changes" comment="add formLogin.jsp and logout-component.jsp and import the last in others jsp files.">
-      <change afterPath="$PROJECT_DIR$/src/main/acao/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/acao/LoginForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/acao/Logout.java" afterDir="false" />
+    <list default="true" id="fb2a54f6-cd03-4438-9d27-c1a1d9c9e7d8" name="Changes" comment="workspace.xml">
+      <change afterPath="$PROJECT_DIR$/src/main/servlet/AutorizacaoFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/servlet/ControladorFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/servlet/MonitoramentoFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/acao/ListaEmpresas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/acao/ListaEmpresas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/servlet/UnicaEntradaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/servlet/UnicaEntradaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +88,9 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="main.servlet" />
     </key>
   </component>
   <component name="RunManager">
@@ -297,7 +300,42 @@
       <option name="project" value="LOCAL" />
       <updated>1679613758725</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="refactor(ListaEmpresas.java): remove RequestDispatcher import.">
+      <created>1679613871076</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1679613871076</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add Login, LoginForm and Logout actions.">
+      <created>1679613913196</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1679613913196</updated>
+    </task>
+    <task id="LOCAL-00028" summary="refactor(UnicaEntradaServlet.java): using HttpSession to set usuarioLogado information into request.">
+      <created>1679613970940</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1679613970940</updated>
+    </task>
+    <task id="LOCAL-00029" summary="update readme.md.">
+      <created>1679613985495</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1679613985495</updated>
+    </task>
+    <task id="LOCAL-00030" summary="workspace.xml">
+      <created>1679613997687</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1679613997687</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -312,9 +350,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creating initial hello world!" />
-    <MESSAGE value="pom.xml and other settings files" />
-    <MESSAGE value="first servlet development to display hello world." />
     <MESSAGE value="Development of Empresa Model and a class to work as database" />
     <MESSAGE value="servlet to method get &quot;empresas&quot; list" />
     <MESSAGE value="create jsp to display list&lt;Empresas&gt;" />
@@ -330,13 +365,17 @@
     <MESSAGE value="refactor: updating path url and add &quot;acao&quot; parameter in forms jsp." />
     <MESSAGE value="Remove unused servlet classes: NovaEmpresaServlet.java and RemoveEmpresaServlet.java" />
     <MESSAGE value="refactor(pom.xml): add maven-war-plugin to run the project properly into eclipse." />
-    <MESSAGE value="workspace.xml" />
     <MESSAGE value="moving jsps files into WEB-INF folder" />
     <MESSAGE value="create Acao Interface, implement it in all action classes" />
     <MESSAGE value="refactor(UnicaEntradaServlet): implements the &quot;command&quot; design pattern and Reflections (Class) to improve the code." />
     <MESSAGE value="add the Usuario class model and initialize some users in static scope of Banco" />
     <MESSAGE value="add formLogin.jsp and logout-component.jsp and import the last in others jsp files." />
-    <option name="LAST_COMMIT_MESSAGE" value="add formLogin.jsp and logout-component.jsp and import the last in others jsp files." />
+    <MESSAGE value="refactor(ListaEmpresas.java): remove RequestDispatcher import." />
+    <MESSAGE value="Add Login, LoginForm and Logout actions." />
+    <MESSAGE value="refactor(UnicaEntradaServlet.java): using HttpSession to set usuarioLogado information into request." />
+    <MESSAGE value="update readme.md." />
+    <MESSAGE value="workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
